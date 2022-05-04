@@ -1,0 +1,27 @@
+Colors
+:root{
+    --main-bg-color: #E5E5E5;
+    --accent-bg-color:#F5F4FA;
+    --main-txt-color: #212121;
+    --main-accent-color: #2196F3;
+    --sec-accent-color: #757575;
+/* Footer colors */
+--footer-bg-color:#2F303A;
+--footer-txt-color: #ffffff;
+--footer-accent-color: rgba(255, 255, 255, 0.6);
+}
+body{
+    /* Font */
+font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+/* Colors */
+color: var(--main-txt-color);
+
+
+}
