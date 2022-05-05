@@ -1,4 +1,4 @@
-Colors
+/* Colors */
 :root{
     --main-bg-color: #E5E5E5;
     --accent-bg-color:#F5F4FA;
@@ -19,9 +19,92 @@ font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
+background-color: var(--main-bg-color);
 
 /* Colors */
 color: var(--main-txt-color);
+}
+/* Navigation */
+.nav-link{
+    background-color: aqua;
 
+}
+.logo{
+position: absolute;
+width: 145px;
+height: 31px;
+left: 215px;
+top: 24px;
 
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+text-decoration: none;
+color: var(--main-txt-color);
+}
+.logo-decor{
+   
+    color: var(--main-accent-color);
+}
+.nav-decor{
+    text-decoration: none;
+    list-style-type: none;
+ 
+}
+.nav-decor:visited {
+    color: var(--main-txt-color);
+}
+.nav-decor:hover{
+    color: var(--main-accent-color);
+}
+
+.nav-studio{
+    position: absolute;
+    width: 49px;
+    height: 16px;
+    left: 453px;
+    top: 32px;    
+    }
+.nav-portfolio{
+    position: absolute;
+    width: 77px;
+    height: 16px;
+    left: 552px;
+    top: 32px;
+    
+}
+.nav-contacts{
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    left: 679px;
+    top: 32px;
+        
+}
+.nav-mailto{
+    color: var(--sec-accent-color);
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+        
+}
+.nav-tel{
+color: var(--sec-accent-color);
+position: absolute;
+width: 122px;
+height: 16px;
+left: 1263px;
+top: 32px;
+
+}
+/* HERO */
+.hero-color{
+    background-color: var(--footer-bg-color);
 }
