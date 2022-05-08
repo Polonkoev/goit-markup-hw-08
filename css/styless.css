@@ -2,9 +2,11 @@
 :root{
     --main-bg-color: #E5E5E5;
     --accent-bg-color:#F5F4FA;
+    --nav-bg-color:#ffffff;
     --main-txt-color: #212121;
     --main-accent-color: #2196F3;
     --hero-txt-color: #ffffff;
+    --hero-bg-color: #2f303a;
     --sec-accent-color: #757575;
 /* Footer colors */
 --footer-bg-color:#2F303A;
@@ -24,17 +26,17 @@ background-color: var(--main-bg-color);
 
 /* Colors */
 color: var(--main-txt-color);
-border: 2px solid  red;
+/* border: 2px solid  red; */
 max-width: 1600px;
 left: 0px;
 top: 80px;
 }
 /* Navigation */
 .navigation{
+display: inline-block;
 width: 1600px;
 height: 80px;
-    
-
+background-color: var(--nav-bg-color);
 }
 .logo{
 position: absolute;
@@ -48,7 +50,6 @@ font-style: 400;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
-/* letter-spacing: 0.03em; */
 text-decoration: none;
 color: var(--main-txt-color);
 }
@@ -56,10 +57,12 @@ color: var(--main-txt-color);
 .logo-decor{
    
     color: var(--main-accent-color);
+    
 }
 .nav-decor{
     text-decoration: none;
     list-style-type: none;
+    letter-spacing: 0.02em;
  
 }
 .nav-decor:visited {
@@ -118,12 +121,11 @@ top: 32px;
 }
 /* HERO */
 .hero{
-    position: absolute;
-    width: 1600px;
+     width: 1600px;
     height: 600px;
-    left: 10px;
+    left: 0px;
     top: 80px;
-    background-color: var(--footer-bg-color);
+    background-color: var(--hero-bg-color);
 }
 .hero-txt{
 position: absolute;
@@ -149,16 +151,25 @@ width: 200px;
 height: 50px;
 left: 700px;
 top: 430px;
-background-color: var(--main-accent-color);
-
+margin-top: 30px;
 font-family: 'Roboto';
 font-style: 400;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
+background-color: var(--main-accent-color);
+border-radius: 4px;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
 
 color: var(--hero-txt-color);
+
+
+
 }
 
 
