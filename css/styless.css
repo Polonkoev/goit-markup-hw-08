@@ -14,7 +14,8 @@
 --footer-accent-color: rgba(255, 255, 255, 0.6);
 }
 body{
-    /* Font */
+
+       /* Font */
 font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 font-family: 'Roboto';
 font-style: 400;
@@ -26,13 +27,14 @@ background-color: var(--main-bg-color);
 
 /* Colors */
 color: var(--main-txt-color);
-/* border: 2px solid  red; */
+border: 2px solid  red;
 max-width: 1600px;
 left: 0px;
 top: 80px;
 }
 /* Navigation */
 .navigation{
+
 display: inline-block;
 width: 1600px;
 height: 80px;
@@ -68,10 +70,7 @@ color: var(--main-txt-color);
 .nav-decor:visited {
     color: var(--main-txt-color);
 }
-.nav-decor:hover{
-    color: var(--main-accent-color);
-}
-.nav-decor:focus{
+.nav-decor:hover, .nav-decor:focus{
     color: var(--main-accent-color);
 }
 
@@ -121,7 +120,8 @@ top: 32px;
 }
 /* HERO */
 .hero{
-     width: 1600px;
+    
+    width: 1600px;
     height: 600px;
     left: 0px;
     top: 80px;
@@ -152,30 +152,194 @@ height: 50px;
 left: 700px;
 top: 430px;
 margin-top: 30px;
+background-color: var(--main-accent-color);
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 font-family: 'Roboto';
-font-style: 400;
+font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-letter-spacing: 0.06em;
-background-color: var(--main-accent-color);
-border-radius: 4px;
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-
 color: var(--hero-txt-color);
-
-
-
+letter-spacing: 0.06em;
 }
 
-
-
-
-
+/*  FEATURES */
 .features{
-    margin-top: 774px;
+    
+    display: inline-block;   
+    border: 1px solid red;
+    width: 1170px;
+    height: 101px;
+    margin-left: 215px;
+    margin-top: 94px;
+
+
 }
+.features ul{
+margin: 0;
+padding: 0;
+
+}
+.features h3{
+    width: 270px;
+    height: 16px;
+    border: 1px solid teal;
+}
+.features p{
+width: 270px;
+height: 75px;
+border: 1px solid violet;
+
+
+}
+.features li{
+display: inline-block;
+vertical-align: top;
+
+}
+
+
+
+
+
+/* .item-decor{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+letter-spacing: 0.03em;
+color: var(--sec-accent-color);
+} */
+    
+/* ABOUT OUR WORK */
+
+  /* .about-work ul{
+    
+    list-style-type: none;
+} */
+/* .about-work h2{
+    position: absolute;
+    width: 376px;
+    height: 42px;
+    left: 612px;
+    top: 969px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}  
+
+ /* .about-work-item{
+position: absolute;
+width: 370px;
+height: 294px;
+left: 215px;
+top: 1061px;
+} */
+
+/* .about-work-item-1{
+position: absolute;
+width: 370px;
+height: 294px;
+left: 615px;
+top: 1061px;
+} */
+
+/* .about-work-item-2{
+position: absolute;
+width: 370px;
+height: 294px;
+left: 1015px;
+top: 1061px;
+} */
+
+
+ /* our-team */ 
+
+ /* .our-team{
+display: inline-block;
+border: 2px solid red;
+position: absolute;
+width: 1600px;
+height: 648px;
+left: 10px;
+top: 1449px;
+background-color: var(--accent-bg-color);
+} */
+
+ /* .our-team ul {
+     list-style-type: none;
+ } */
+
+/* .our-team-head{
+position: absolute;
+width: 264px;
+height: 42px;
+left: 668px;
+top: 94px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+
+} */
+
+/* .our-team-item{
+position: absolute;
+    width: 270px;
+    height: 368px;
+    left: 215px;
+    top: 186px;
+} */
+
+/* .our-team-item-1{
+    position: absolute;
+    width: 270px;
+    height: 368px;
+    left: 515px;
+    top: 186px;
+} */
+
+/* 
+.our-team-item-2{
+    position: absolute;
+        width: 270px;
+        height: 368px;
+        left: 815px;
+        top: 186px;
+} */
+
+/* .our-team-item-3{
+    position: absolute;
+    width: 270px;
+    height: 368px;
+    left: 1115px;
+    top: 186px;
+}  */
+
+
+
+
+/* FOOTER */
+ /* .footer{
+    position: absolute;
+        width: 1600px;
+        height: 252px;
+        left: 10px;
+        top: 2097px;
+        border: 1px solid red;
+        background-color: var(--footer-bg-color);
+}   */
+ 
