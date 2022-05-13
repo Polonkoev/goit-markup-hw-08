@@ -32,7 +32,9 @@ body {
             /* ============== Header and navigation ============== */
 
 
-
+.header-decor{
+    background-color: var(--footer-txt-color);
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -191,7 +193,7 @@ body {
      
     color: var(--footer-txt-color);
 }
-.footer-nav-decor{
+.footer-contact-decor{
     
     font-style: normal;
     font-weight: 400;
@@ -200,6 +202,60 @@ body {
   
     color: var(--footer-accent-color);  
 }
-.footer-nav-decor:hover, .footer-nav-decor:focus{
+.footer-contact-decor:hover, .footer-contact-decor:focus{
     color: var(--main-accent-color);
 }
+            /* ============== /Footer ============== */
+            
+            
+            /* ============== Portfolio ============== */
+.portfolio-head{
+    display: none;
+}
+.filter{
+    
+    list-style: none;
+}
+.filter-item{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    background-color: var(--accent-bg-color);
+}
+.filter-item:hover, .filter-item:focus{
+    color: var(--hero-txt-color);
+    background-color: var(--main-accent-color);
+}
+                /* ============== /Portfolio ============== */
+                
+                    /* ============== Cards ============== */
+.card-list{
+    list-style: none;
+}
+.card-list-button{
+    background: var(--footer-txt-color);
+    border: 1px solid #eeeeee;
+}
+                  
+.card-list-head{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+
+    color: var(--main-txt-color);
+}
+.card-list-desc{
+    font-size: 16px;
+    line-height: 1.88;
+    
+
+    color: var(--sec-accent-color);
+}
+.card-list-link{
+    text-decoration: none;
+}
+                /* ============== Cards ============== */
