@@ -31,6 +31,8 @@ body {
 }
             /* ============== Header and navigation ============== */
 
+
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -41,17 +43,16 @@ body {
     color: var(--main-txt-color);
 }
 .logo-decor {
-     var(--main-accent-color);
+     color:var(--main-accent-color);
 }
 
 .nav-decor {
     text-decoration: none;
     list-style: none;
     letter-spacing: 0.02em;
+    color: var(--main-txt-color);
 }
-.nav-decor:visited {
-     color: var(--main-txt-color);
-}
+
 
 .nav-decor:hover,
 .nav-decor:focus {
@@ -64,10 +65,17 @@ body {
 .nav-tel {
     color: var(--sec-accent-color);
 }
+.current {
+    color: var(--main-accent-color);
+}
+
             /* ============== /Header and navigation ============== */
 
 
             /* ============== Hero ============== */
+.hero{
+    background-color: var(--hero-bg-color);
+}
 .hero-txt {
     font-weight: 900;
     font-size: 44px;
@@ -120,9 +128,78 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-
+    text-align: center;
     color: var(--main-txt-color);
 }
 .about-work-list{
     list-style: none;
+}
+
+            /* ============== /About our work ============== */
+
+             /* ============== Our Team ============== */
+.our-team{
+    background-color: var(--accent-bg-color);
+}
+.our-team-list{
+    list-style: none;
+}
+.our-team-head{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    
+    color: var(--main-txt-color);
+}
+.our-team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.our-team-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: var(--sec-accent-color);
+}
+.our-team-item{
+    background-color: var(--footer-txt-color);
+}
+                    /* ============== /Our Team ============== */
+                    
+                    /* ============== Footer ============== */
+.footer{
+    background-color: var(--footer-bg-color);
+}
+.logo-footer{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    color: var(--footer-txt-color);
+}
+.footer-addres{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+     
+    color: var(--footer-txt-color);
+}
+.footer-nav-decor{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  
+    color: var(--footer-accent-color);  
+}
+.footer-nav-decor:hover, .footer-nav-decor:focus{
+    color: var(--main-accent-color);
 }
