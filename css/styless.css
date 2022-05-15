@@ -33,7 +33,9 @@ body {
             /* ============== Header and navigation ============== */
 
 
-
+.header-decor{
+    background-color: var(--footer-txt-color);
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -216,7 +218,7 @@ body {
     text-decoration: none;
     color: var(--footer-accent-color);  
 }
-.footer-nav-decor:hover, .footer-nav-decor:focus{
+.footer-contact-decor:hover, .footer-contact-decor:focus{
     color: var(--main-accent-color);
 }
 
