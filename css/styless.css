@@ -29,7 +29,28 @@ body {
     /* Colors */
     color: var(--main-txt-color);
     
+   
 }
+ h1,
+ h2,
+ h3,
+ p,
+ ul {
+     margin-top: 0;
+     margin-bottom: 0;
+    outline: 1px solid aqua;
+ }
+ .section{
+     padding-top: 94px;
+     padding-bottom: 94px;
+     outline: 1px solid red;
+     
+ }
+ .container{
+     
+     width: 1200px;
+     
+ }
             /* ============== Header and navigation ============== */
 
 
