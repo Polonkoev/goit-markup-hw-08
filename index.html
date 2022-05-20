@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link href="./css/styless.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,13 +21,13 @@
   </head>
   <body>
     <!-- Header and navigation-->
-    <header class="header-decor">
-      <div class="container">
+    <header class="header header-decor">
+      <div class="container container-header">
         <nav class="navigation">
           <a class="logo" href="./index.html"
             ><span class="logo-decor">Web</span>Studio</a
           >
-          <ul class="nav-decor">
+          <ul class="nav-list nav-decor">
             <li>
               <a class="nav-studio nav-decor current" href="./index.html"
                 >Студия</a
@@ -37,59 +41,60 @@
             <li><a class="nav-contacts nav-decor" href="">Контакты</a></li>
           </ul>
         </nav>
-        <a class="nav-mailto nav-decor" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="nav-tel nav-decor" href="tel:+380961111111"
-          >+38 096 111 11 11</a
-        >
+
+        <div class="mail-tel">
+          <a class="nav-mailto nav-decor" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="nav-tel nav-decor" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </div>
       </div>
     </header>
     <main>
       <!--Hero-->
-      <section class="section">
+      <section class="section hero">
         <div class="container">
-          <div class="hero">
+          <div class="hero-pos">
             <h1 class="hero-txt">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="hero-button">Заказать услугу</button>
           </div>
         </div>
       </section>
       <!--Features-->
-      <section class="section">
+      <section class="section features">
         <div class="container">
-          <div class="features">
-            <ul class="features-list-decor">
-              <li>
-                <h3 class="features-head">Внимание к деталям</h3>
-                <p class="features-item features-item-decor">
-                  Идейные соображения, а также начало повседневной работы по
-                  формированию позиции.
-                </p>
-              </li>
-              <li>
-                <h3 class="features-head">Пунктуальность</h3>
-                <p class="features-item-decor">
-                  Задача организации, в особенности же рамки и место обучения
-                  кадров влечет за собой.
-                </p>
-              </li>
-              <li>
-                <h3 class="features-head">Планирование</h3>
-                <p class="features-item-decor">
-                  Равным образом консультация с широким активом в значительной
-                  степени обуславливает.
-                </p>
-              </li>
-              <li>
-                <h3 class="features-head">Современные технологии</h3>
-                <p class="features-item-decor">
-                  Значимость этих проблем настолько очевидна, что реализация
-                  плановых заданий.
-                </p>
-              </li>
-            </ul>
-          </div>
+          <ul class="features-list-decor">
+            <li>
+              <h3 class="features-head">Внимание к деталям</h3>
+              <p class="features-item features-item-decor">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3 class="features-head">Пунктуальность</h3>
+              <p class="features-item features-item-decor">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3 class="features-head">Планирование</h3>
+              <p class="features-item features-item-decor">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3 class="features-head">Современные технологии</h3>
+              <p class="features-item-decor">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
       <!--About our work-->
