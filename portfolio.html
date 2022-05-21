@@ -12,21 +12,22 @@
     <link href="./css/styless.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
     <!-- Header and navigation-->
-    <header class="header-decor">
-      <div class="container">
+    <header class="header header-decor">
+      <div class="container container-header">
         <nav class="navigation">
           <a class="logo" href="./index.html"
             ><span class="logo-decor">Web</span>Studio</a
           >
-          <ul class="nav-decor">
+          <ul class="nav-list nav-decor">
             <li>
               <a class="nav-studio nav-decor" href="./index.html">Студия</a>
             </li>
@@ -38,12 +39,15 @@
             <li><a class="nav-contacts nav-decor" href="">Контакты</a></li>
           </ul>
         </nav>
-        <a class="nav-mailto nav-decor" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="nav-tel nav-decor" href="tel:+380961111111"
-          >+38 096 111 11 11</a
-        >
+
+        <div class="mail-tel">
+          <a class="nav-mailto nav-decor" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="nav-tel nav-decor" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </div>
       </div>
     </header>
 
@@ -185,19 +189,25 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="container">
+      <div class="container container-footer">
         <a class="logo-footer" href="./index.html"
           ><span class="logo-decor">Web</span>Studio</a
         >
 
-        <address>
-          <span class="footer-addres">г. Киев, пр-т Леси Украинки, 26</span>
-          <a class="footer-contact-decor" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <a class="footer-contact-decor" href="tel:+380991111111 "
-            >+38 099 111 11 11</a
-          >
+        <address class="adress">
+          <p class="footer-addres">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="footer-address-list">
+            <li>
+              <a class="footer-contact-decor" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-contact-decor" href="tel:+380991111111 "
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
         </address>
       </div>
     </footer>
