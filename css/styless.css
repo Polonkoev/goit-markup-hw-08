@@ -83,9 +83,11 @@ img {
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
+
 }
+
 
 .nav-list {
     display: flex;
@@ -136,7 +138,9 @@ img {
     list-style: none;
     letter-spacing: 0.02em;
     color: var(--main-txt-color);
+
 }
+
 
 
 .nav-decor:hover,
@@ -441,37 +445,41 @@ img {
 
 /* ============== Portfolio ============== */
 .portfolio-head {
-    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
 }
 
 .filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 
     list-style: none;
 
 }
 
-.filter-item {
+.filter-item-btn {
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
 
-    /* margin-left: 8px; */
 
     background-color: var(--accent-bg-color);
 }
 
-.filter-item>:first-child {
-    margin-left: 8px;
+.filter-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 
-
-.filter-item:hover,
-.filter-item:focus {
+.filter-item-btn:hover,
+.filter-item-btn:focus {
     color: var(--hero-txt-color);
     background-color: var(--main-accent-color);
 }
@@ -480,8 +488,19 @@ img {
 
 /* ============== Cards ============== */
 .card-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    margin-left: -30px;
+    margin-top: -30px;
 
+}
+
+.card-list-item {
+    margin-left: 30px;
+    margin-top: 30px;
+
+    flex-basis: calc((100%-270)/9);
 }
 
 
@@ -491,6 +510,7 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
 
 
     color: var(--main-txt-color);
@@ -499,7 +519,7 @@ img {
 .card-list-desc {
     font-size: 16px;
     line-height: 1.88;
-
+    margin-top: 4px;
 
     color: var(--sec-accent-color);
 }
