@@ -13,6 +13,7 @@
     --footer-bg-color: #2F303A;
     --footer-txt-color: #ffffff;
     --footer-accent-color: rgba(255, 255, 255, 0.6);
+
 }
 
 body {
@@ -39,7 +40,7 @@ h4,
 p {
     margin-top: 0;
     margin-bottom: 0;
-    /* outline: 1px solid aqua; */
+
 }
 
 ol,
@@ -47,20 +48,21 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    /* outline: 1px solid blue; */
+
+
 }
 
 
 img {
     display: block;
-    /* outline: 1px solid violet; */
+
 }
 
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    /* outline: 1px solid red; */
+
 
 
 }
@@ -71,42 +73,13 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 2px solid black; */
+
 
 }
 
 /* ============== Header and navigation ============== */
 .container-header {
     display: flex;
-
-    /* outline: 1px solid green; */
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.nav-studio {
-    margin-right: 50px;
-}
-
-.nav-portfolio {
-    margin-right: 50px;
-}
-
-
-
-.mail-tel {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    /* outline: 1px solid orange; */
 }
 
 .header-decor {
@@ -114,6 +87,7 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 
+/* Logo */
 .logo {
     display: flex;
     margin-right: 93px;
@@ -129,10 +103,35 @@ img {
 .logo-decor {
     color: var(--main-accent-color);
     color: var(--main-accent-color);
+}
+
+/* /logo */
+/* Navigation */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list-item {
+    margin-right: 50px;
+}
+
+.nav-mail-tel {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
 
 }
 
-
+.nav-mailto {
+    margin-right: 50px;
+}
 
 .nav-decor {
     text-decoration: none;
@@ -141,6 +140,7 @@ img {
     color: var(--main-txt-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    color: var(--sec-accent-color);
 }
 
 .nav-decor:hover,
@@ -148,14 +148,7 @@ img {
     color: var(--main-accent-color);
 }
 
-.nav-mailto {
-    margin-right: 50px;
-    color: var(--sec-accent-color);
-}
-
-.nav-tel {
-    color: var(--sec-accent-color);
-}
+/* /Navigation */
 
 .current {
     color: var(--main-accent-color);
@@ -168,20 +161,16 @@ img {
 .hero {
     display: flex;
     background-color: var(--hero-bg-color);
-    padding-top: 0px;
-}
-
-.hero-pos {
 
     padding-top: 200px;
     padding-bottom: 200px;
-
 }
+
 
 
 
 .hero-txt {
-    width: 696px;
+    max-width: 696px;
     text-align: center;
 
     margin-right: auto;
@@ -239,16 +228,12 @@ img {
 
 /* ============== Features ============== */
 
-/* .features {
-    display: flex;
-} */
-
-.features-list-decor {
+.features-list {
     display: flex;
     list-style: none;
 }
 
-.features-item-decor {
+.features-item-description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -258,7 +243,7 @@ img {
 }
 
 .features-head {
-    margin-right: 30px;
+
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -270,7 +255,11 @@ img {
     color: var(--main-txt-color);
 }
 
-.features-item {
+.features-list-item {
+    width: 270px;
+}
+
+.features-list-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -279,6 +268,9 @@ img {
 
 /* ============== About our work ============== */
 
+.about-work {
+    padding-top: 0;
+}
 
 .about-work-head {
 
@@ -358,8 +350,7 @@ img {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
     color: var(--main-txt-color);
 }
@@ -376,7 +367,7 @@ img {
 }
 
 .team-description {
-    /* margin-top: 30px; */
+    padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--hero-txt-color);
 
@@ -391,35 +382,27 @@ img {
 
 /* ============== Footer ============== */
 .footer {
-    /* display: flex; */
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--footer-bg-color);
-    /* min-height: 252px; */
+
 }
 
-.logo-footer {
 
 
+.logo-footer-link {
+    display: inline-block;
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-    margin-bottom: 20px;
-
-
-
-
     color: var(--footer-txt-color);
 }
 
-.container-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.footer-address-list {
-
-    list-style: none;
+.addres {
+    margin-top: 20px;
 }
 
 .footer-addres {
@@ -427,14 +410,25 @@ img {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    margin-top: 20px;
+
+    padding-bottom: 9px;
 
     color: var(--footer-txt-color);
 }
 
-.footer-contact-decor {
-    margin-top: 9px;
+.footer-address-list {
+    list-style: none;
+}
 
+
+
+
+
+.footer-item-list {
+    padding-bottom: 9px;
+}
+
+.footer-contact-decor {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -478,6 +472,7 @@ img {
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+    padding: 6px 22px;
     border-radius: 4px;
     border: 1px solid transparent;
 
@@ -523,7 +518,7 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
+
 
 
     color: var(--main-txt-color);
@@ -543,8 +538,11 @@ img {
 }
 
 .card-description {
-    border: 1px solid #eeeeee;
-    text-align: center;
+    padding: 20px 24px;
+
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 
