@@ -80,11 +80,13 @@ img {
 /* ============== Header and navigation ============== */
 .container-header {
     display: flex;
+
 }
 
 .header-decor {
     background-color: var(--footer-txt-color);
     border-bottom: 1px solid #ECECEC;
+    margin-bottom: 22px;
 }
 
 /* Logo */
@@ -161,13 +163,21 @@ img {
 .hero {
     display: flex;
     background-color: var(--hero-bg-color);
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/img-main/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgba(47, 48, 58, 0.4); */
 
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-
-
+/* .overlay {} */
 
 .hero-txt {
     max-width: 696px;
