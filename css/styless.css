@@ -132,23 +132,36 @@ img {
 }
 
 .nav-mailto {
+
+
+
     margin-right: 50px;
 }
 
+.nav-icon-decor {
+
+    margin-right: 10px;
+}
+
+
 .nav-decor {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     list-style: none;
     letter-spacing: 0.02em;
     color: var(--main-txt-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--sec-accent-color);
+    /* color: var(--sec-accent-color); */
 }
 
 .nav-decor:hover,
 .nav-decor:focus {
     color: var(--main-accent-color);
 }
+
+
 
 /* /Navigation */
 
@@ -167,17 +180,16 @@ img {
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../images/img-main/hero-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-main/hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background-color: rgba(47, 48, 58, 0.4); */
+
 
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-/* .overlay {} */
 
 .hero-txt {
     max-width: 696px;
@@ -238,9 +250,38 @@ img {
 
 /* ============== Features ============== */
 
+.features-icon-list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+
+}
+
+
+
+.features-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.features-icon-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .features-list {
     display: flex;
     list-style: none;
+
 }
 
 .features-item-description {
@@ -266,6 +307,7 @@ img {
 }
 
 .features-list-item {
+
     width: 270px;
 }
 
