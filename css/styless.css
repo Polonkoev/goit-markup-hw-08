@@ -153,12 +153,17 @@ img {
     color: var(--main-txt-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    /* color: var(--sec-accent-color); */
+    color: var(--sec-accent-color);
 }
 
 .nav-decor:hover,
 .nav-decor:focus {
     color: var(--main-accent-color);
+}
+
+.nav-decor:hover .nav-icon-decor,
+.nav-decor:focus .nav-icon-decor {
+    fill: var(--main-accent-color);
 }
 
 
@@ -428,8 +433,7 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-
-
+.
 /* ============== /Our Team ============== */
 
 /* ============== Footer ============== */
