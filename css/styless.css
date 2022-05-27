@@ -370,14 +370,6 @@ img {
     background-color: var(--accent-bg-color);
 }
 
-.our-team-list {
-    display: flex;
-    list-style: none;
-    margin-left: -30px;
-
-
-}
-
 .our-team-head {
     font-weight: 700;
     font-size: 36px;
@@ -385,20 +377,18 @@ img {
     text-align: center;
     margin-bottom: 50px;
 
+}
 
-
-
+.our-team-list {
+    display: flex;
+    list-style: none;
+    margin-left: -30px;
 }
 
 .our-team-item {
     flex-basis: calc((100%-120)/4);
     margin-left: 30px;
     background-color: var(--hero-txt-color);
-
-
-
-
-
 }
 
 .our-team-name {
@@ -424,6 +414,7 @@ img {
 }
 
 .team-description {
+
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--hero-txt-color);
@@ -433,7 +424,61 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-.
+.social-links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link-list {
+    display: inline-flex;
+    margin-top: 16px;
+    list-style: none;
+
+}
+
+
+
+.social-link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+
+}
+
+.social-link-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-social-icon {
+
+    fill: #AFB1B8;
+}
+
+.social-link-item:hover {
+    background-color: #2196F3;
+}
+
+.social-link-item:hover .team-social-icon {
+
+
+    fill: #FFF;
+    background-color: #2196F3;
+
+}
+
+/* .team-social-icon:hover {
+    fill: #0024a7;
+} */
+
+
+
 /* ============== /Our Team ============== */
 
 /* ============== Footer ============== */
