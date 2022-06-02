@@ -658,10 +658,7 @@ img {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-decor:hover,
-.footer-contact-decor:focus {
-    color: var(--main-accent-color);
-}
+
 
 /* footer social links */
 
