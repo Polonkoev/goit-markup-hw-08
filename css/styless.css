@@ -108,6 +108,7 @@ img {
 }
 
 /* /logo */
+
 /* Navigation */
 .navigation {
     display: flex;
@@ -141,7 +142,7 @@ img {
 .nav-icon-decor {
     fill: #757575;
     margin-right: 10px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -156,7 +157,7 @@ img {
     color: var(--main-txt-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-decor-link {
@@ -165,7 +166,7 @@ img {
 
 .nav-decor:hover,
 .nav-decor:focus {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     color: var(--main-accent-color);
 }
 
@@ -261,7 +262,7 @@ img {
     letter-spacing: 0.06em;
 
     color: var(--hero-txt-color);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -489,7 +490,7 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-item:not(:last-child) {
@@ -499,7 +500,7 @@ img {
 .team-social-icon {
 
     fill: #AFB1B8;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -554,19 +555,15 @@ img {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 
-
-
-
-
-
 .clients-logo {
     fill: #AFB1B8;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -657,7 +654,7 @@ img {
     text-decoration: none;
 
     color: var(--footer-accent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -708,7 +705,7 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-item-footer:not(:last-child) {
@@ -760,7 +757,9 @@ img {
     border-radius: 4px;
     border: 1px solid transparent;
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-bg-color);
 
 }
@@ -834,7 +833,7 @@ img {
     overflow: hidden;
     display: inline-block;
     text-decoration: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-list-link:hover,
@@ -865,7 +864,7 @@ img {
     display: flex;
     position: absolute;
     top: 0;
-    /* background-color: #212121; */
+
     width: 370px;
     height: 294px;
     overflow: hidden;
@@ -891,11 +890,11 @@ img {
     align-items: center;
     width: 370px;
     height: 294px;
-
-
-
     background-color: rgba(33, 150, 243, 0.9);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-list-link:hover .card-hovered,
@@ -948,7 +947,7 @@ img {
 }
 
 .backdrop.is-hidden {
-    opacity: 1;
+    opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
