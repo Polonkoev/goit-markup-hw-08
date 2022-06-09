@@ -725,7 +725,12 @@ img {
 
 
 /* FOOTER SUBSCRIBE */
-.subscribe {
+.form-subscribe {
+
+    margin-left: 93px;
+}
+
+.email-input {
     display: flex;
 
 }
@@ -741,12 +746,14 @@ img {
 }
 
 .subscribe-email-input {
+
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
     padding-left: 16px;
+    color: #ffffff;
 }
 
 
@@ -761,12 +768,19 @@ img {
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border-color: transparent;
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     padding-left: 30px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.icon-send {
+    margin-left: 10px;
 }
 
 
@@ -991,6 +1005,8 @@ img {
     padding: 0;
 }
 
+
+
 .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -1000,8 +1016,102 @@ img {
 .modal-close-btn-icon {
 
     fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon {
+    fill: var(--main-accent-color);
+}
+
+/* Modal input form */
+
+.modal-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.modal-input-form {
+    display: block;
 
 }
+
+
+
+.input-your {
+    display: flex;
+    flex-direction: column;
+
+    width: 448px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--sec-accent-color);
+}
+
+.input-your-data {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.input-comment {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 138px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--sec-accent-color);
+
+}
+
+.txt-comment {
+    width: 448px;
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+/* .input-comment {
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid green;
+}
+
+.txt-comment {
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    outline: 1px solid blue;
+} */
+
+/* .txt-comment {
+    color: #000000;
+} */
+
+
+/* /Modal input form */
 
 
 

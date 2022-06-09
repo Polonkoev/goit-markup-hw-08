@@ -497,28 +497,73 @@
             </li>
           </ul>
         </div>
-      </div>
+        <form
+          class="form-subscribe"
+          name="subscribe"
+          autocomplete="off"
+          novalidate
+        >
+          <h2 class="subscribe-head">Подпишитесь на рассылку</h2>
 
-      <form name="subscribe" autocomplete="off" novalidate>
-        <h2 class="subscribe-head">Подпишитесь на рассылку</h2>
-        <input
-          class="subscribe-email-input"
-          type="text"
-          name="email"
-          placeholder="E-mail"
-        />
-        <button class="subscribe-button" type="submit">Подписаться</button>
-      </form>
+          <div class="email-input">
+            <input
+              class="subscribe-email-input"
+              type="text"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-button" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </footer>
 
     <!-- MODAL  -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="11" height="11">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-head">Оставьте свои данные, мы вам перезвоним</h2>
+        <form
+          class="modal-input-form"
+          name="modal-input-form"
+          autocomplete="off"
+          novalidate
+        >
+          <label class="input-your your-name">
+            Имя
+            <input class="input-your-data" type="text" name="your-name" />
+          </label>
+          <label class="input-your your-tel">
+            Телефон
+            <input class="input-your-data" type="tel" name="your-tel" />
+          </label>
+          <label class="input-your your-email">
+            Почта
+            <input class="input-your-data" type="email" name="your-mail" />
+          </label>
+          <label class="input-comment your-comment">
+            Комментарий
+            <textarea
+              class="txt-comment"
+              name="txt-comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <label class="input-your your-agree">
+            <input type="checkbox" />
+            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора </a>
+          </label>
+        </form>
       </div>
     </div>
 
