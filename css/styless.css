@@ -746,11 +746,10 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
-}
-
-.subscribe-email-input::placeholder {
     padding-left: 16px;
 }
+
+
 
 .subscribe-button {
     display: flex;
