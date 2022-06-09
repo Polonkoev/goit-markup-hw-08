@@ -1,4 +1,4 @@
-# goit-markup-hw-01
+# goit-markup-hw-06
 
 link https://polonkoev.github.io/goit-markup-hw-06/index.html
 
