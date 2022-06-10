@@ -1104,7 +1104,7 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-your-checkbox {
+.policy-checkbox {
 
     display: flex;
     justify-content: center;
@@ -1115,17 +1115,24 @@ img {
     font-size: 14px;
     line-height: 1.71;
     color: var(--sec-accent-color);
+    cursor: pointer;
+
 }
 
 .modal-icon-check {
+    position: relative;
     margin-right: 9px;
-
-    background-image: url(/images/symbol-defs.svg);
+    border: 2px solid var(--main-txt-color);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .visually-hidden {
     position: absolute;
-    /* width: 1px;
+    width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
@@ -1133,9 +1140,24 @@ img {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden; */
+    overflow: hidden;
 }
 
+
+.checkbox:checked+.modal-icon-check {
+    background-color: var(--main-accent-color);
+    border-color: transparent;
+}
+
+.policy-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--main-accent-color);
+
+
+    text-decoration-line: underline;
+}
 
 
 .send-button {
