@@ -524,7 +524,7 @@
     </footer>
 
     <!-- MODAL  -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="11" height="11">
@@ -538,7 +538,7 @@
           autocomplete="off"
           novalidate
         >
-          <label class="input-your your-name">
+          <label class="modal-input your-name">
             Имя
 
             <input class="input-your-data" type="text" name="your-name" />
@@ -546,14 +546,14 @@
               <use href="./images/symbol-defs.svg#icon-contact"></use>
             </svg>
           </label>
-          <label class="input-your your-tel">
+          <label class="modal-input your-tel">
             Телефон
             <input class="input-your-data" type="tel" name="your-tel" />
             <svg class="modal-your-icon" width="13" height="13">
               <use href="./images/symbol-defs.svg#icon-tel"></use>
             </svg>
           </label>
-          <label class="input-your your-email">
+          <label class="modal-input your-email">
             Почта
 
             <input class="input-your-data" type="email" name="your-mail" />
@@ -561,7 +561,7 @@
               <use href="./images/symbol-defs.svg#icon-mail"></use>
             </svg>
           </label>
-          <label class="input-comment your-comment">
+          <label class="input-comment">
             Комментарий
             <textarea
               class="txt-comment"
@@ -570,8 +570,13 @@
             ></textarea>
           </label>
 
-          <label class="input-your your-agree">
-            <input type="checkbox" />
+          <label class="input-your-checkbox your-agree">
+            <input class="visually-hidden checkbox" type="checkbox" name="checkbox" />
+            <span class="modal-icon-check" ></span>
+            <!-- <svg class="modal-icon-check" width="16" height="15">
+              <use href="./images/symbol-defs.svg#icon-check-off"></use>
+            </svg> -->
+
             Соглашаюсь с рассылкой и принимаю <a href="">Условия договора </a>
           </label>
           <button class="send-button" type="submit">Отправить</button>
