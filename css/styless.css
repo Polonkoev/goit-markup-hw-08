@@ -1149,6 +1149,11 @@ img {
 .checkbox:checked+.modal-icon-check {
     background-color: var(--main-accent-color);
     border-color: transparent;
+    outline: none;
+}
+
+.checkbox:focus+.modal-icon-check {
+    outline: 2px solid var(--main-txt-color);
 }
 
 .policy-link {
