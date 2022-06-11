@@ -1023,6 +1023,10 @@ img {
     fill: var(--main-accent-color);
 }
 
+.modal-close-btn:focus .modal-close-btn-icon {
+    fill: var(--main-accent-color);
+}
+
 /* Modal input form */
 
 .modal-head {
