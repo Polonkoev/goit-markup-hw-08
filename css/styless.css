@@ -984,6 +984,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
     width: 528px;
     height: 580px;
     background-color: rgb(255, 255, 255);
@@ -1035,7 +1036,7 @@ img {
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 40px;
+    margin-top: 2px;
     margin-bottom: 12px;
 }
 
@@ -1046,8 +1047,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+
 
     width: 448px;
 
@@ -1062,9 +1062,8 @@ img {
 }
 
 .input-your-data {
+    
 
-    margin-left: auto;
-    margin-right: auto;
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1079,8 +1078,6 @@ img {
     flex-direction: column;
     width: 448px;
     height: 138px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 12px;
@@ -1106,6 +1103,7 @@ img {
     position: absolute;
     top: 50%;
     left: 12px;
+
     fill: var(--main-txt-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1178,6 +1176,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+
     align-items: center;
     justify-content: center;
     font-weight: 700;
