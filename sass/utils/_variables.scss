@@ -1,0 +1,33 @@
+:root {
+
+    --accent-bg-color: #F5F4FA;
+    --nav-bg-color: #ffffff;
+    --main-txt-color: #212121;
+    --main-accent-color: #2196F3;
+    --hero-txt-color: #ffffff;
+    --hero-bg-color: #2f303a;
+    --sec-accent-color: #757575;
+    --button-hover-color: #188CE8;
+    /* Footer colors */
+    --footer-bg-color: #2F303A;
+    --footer-txt-color: #ffffff;
+    --footer-accent-color: rgba(255, 255, 255, 0.6);
+
+}
+
+body {
+
+    /* Font */
+    font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+
+    /* Colors */
+    color: var(--main-txt-color);
+
+}
