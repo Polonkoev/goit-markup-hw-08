@@ -1,5 +1,1 @@
-# goit-markup-hw-06
-
-link https://polonkoev.github.io/goit-markup-hw-07/index.html
-
-
+https://polonkoev.github.io/Polonkoev-goit-markup-hw-07/
