@@ -1,3 +1,9 @@
+.card-hovered, .send-button, .policy-checkbox, .modal-close-btn, .social-link-footer, .clients-link, .social-link, .about-work-desc, .features__icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 :root {
   --accent-bg-color: #f5f4fa;
   --nav-bg-color: #ffffff;
@@ -11,25 +17,8 @@
   --footer-bg-color: #2f303a;
   --footer-txt-color: #ffffff;
   --footer-accent-color: rgba(255, 255, 255, 0.6);
-}
-
-body {
-  /* Font */
-  font-family: "Roboto", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-style: 400;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  /* Colors */
-  color: var(--main-txt-color);
-}
-
-.card-hovered, .send-button, .policy-checkbox, .modal-close-btn, .social-link-footer, .clients-link, .social-link, .about-work-desc, .features__icon-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --main-font: "Roboto", sans-serif;
+  --accent-font: "Raleway", sans-serif;
 }
 
 h1,
@@ -71,6 +60,19 @@ img {
   position: absolute;
 }
 
+body {
+  /* Font */
+  font-family: "Roboto", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  /* Colors */
+  color: var(--main-txt-color);
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -90,7 +92,7 @@ img {
 
 .header-decor {
   background-color: var(--footer-txt-color);
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
