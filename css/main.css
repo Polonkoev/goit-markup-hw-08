@@ -846,4 +846,66 @@ body {
 }
 .card-list-link:hover .card-hovered, .card-list-link:focus .card-hovered {
   transform: translate(0px, -294px) rotate(0deg);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c9aeae;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-container {
+  position: relative;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: auto;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.menu-close-btn-icon {
+  fill: var(--main-txt-color);
+}
+.menu-close-btn-icon:hover {
+  fill: var(--main-accent-color);
+}
+.menu-close-btn-icon:hover:focus {
+  fill: var(--main-accent-color);
+}
+
+.mobile-menu-link {
+  list-style: none;
+  padding: 48px 15px 48px 40px;
+}
+
+.mobile-menu-decor {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-color);
 }/*# sourceMappingURL=main.css.map */

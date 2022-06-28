@@ -46,7 +46,7 @@
             <li><a class="nav-contacts nav-decor" href="">Контакты</a></li>
           </ul>
         </nav>
-        <button type="button" class="burger-btn" >
+        <button type="button" class="burger-btn" data-menu-open>
             <svg class="burger-icon" width="24" height="16">
               <use href="./images/symbol-defs.svg#icon-burger"></use>
             </svg>
@@ -532,6 +532,28 @@
         </form>
       </div>
     </footer> -->
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu " data-menu>
+
+      <div class="container mobile-menu-container">
+        <button
+            type="button"
+            class="menu-close-btn"
+            data-menu-close
+            autofocus
+          >
+            <svg class="menu-close-btn-icon" width="19" height="19">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-link">
+            <li><a href="" class="mobile-menu-studio current mobile-menu-decor"></a>Студия</li>
+            <li><a href="" class="mobile-menu-portfilio mobile-menu-decor"></a>Портфолио</li>
+            <li><a href="" class="mobile-menu-contacts mobile-menu-decor"></a>Контакты</li>
+          </ul>
+      </div>
+    </div>
 
     <!-- MODAL  -->
     <div class="backdrop is-hidden" data-modal>
