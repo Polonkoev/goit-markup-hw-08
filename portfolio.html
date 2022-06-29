@@ -41,10 +41,15 @@
             <li><a class="nav-contacts nav-decor" href="">Контакты</a></li>
           </ul>
         </nav>
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger-icon" width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <ul class="nav-mail-tel">
           <li class="nav-mailto">
-            <a class="nav-decor nav-decor-link" href="mailto:info@devstudio.com"
+            <a class="nav-decor-link" href="mailto:info@devstudio.com"
               ><svg class="nav-icon-decor" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-letter-img"></use>
               </svg>
@@ -52,7 +57,7 @@
             >
           </li>
           <li>
-            <a class="nav-decor nav-decor-link" href="tel:+380961111111"
+            <a class="nav-decor-link" href="tel:+380961111111"
               ><svg class="nav-icon-decor" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-tel-img"></use>
               </svg>
@@ -66,7 +71,7 @@
     <!-- Main content -->
 
     <main>
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h1 class="portfolio-head">Portfolio</h1>
           <ul class="filter">
@@ -308,10 +313,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container container-footer">
         <div>
           <a class="logo-footer-link" href="./index.html"
@@ -399,6 +404,68 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button type="button" class="menu-close-btn" data-menu-close autofocus>
+          <svg class="menu-close-btn-icon" width="19" height="19">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-link">
+          <li>
+            <a href="./index.html" class="mobile-menu-studio mobile-menu-decor"
+              >Студия</a
+            >
+          </li>
+          <li>
+            <a
+              href="./portfolio.html"
+              class="mobile-menu-portfilio mobile-current mobile-menu-decor"
+              >Портфолио</a
+            >
+          </li>
+          <li>
+            <a href="" class="mobile-menu-contact mobile-menu-decor"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts">
+          <li>
+            <a class="mobile-menu-tel" href="tel:+380991111111 "
+              >+38 099 111 11 11</a
+            >
+          </li>
+          <li class="">
+            <a class="mobile-menu-mail" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu-social">
+          <li>
+            <a class="mobile-menu-social-links" href="instagram.com"
+              ><span class="social-link-decor">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-social-links" href="twitter.com"
+              ><span class="social-link-decor">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-social-links" href="facebook.com"
+              ><span class="social-link-decor">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-social-links" href="linkedin.com">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
