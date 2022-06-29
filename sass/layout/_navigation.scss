@@ -147,6 +147,8 @@
   }
 
   .nav-decor-link {
+    display: flex;
+    align-items: center;
     color: var(--sec-accent-color);
   }
 
