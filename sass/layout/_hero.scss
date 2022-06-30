@@ -1,43 +1,27 @@
 .hero {
-  display: flex;
-  background-color: var(--hero-bg-color);
   width: 480px;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--hero-bg-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/images-adaptive/mobile/hero/Hero-img-mobile.jpg);
+    url(/images/mobile/hero/Hero-img-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  padding: 118px 60px;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(/images/images-adaptive/mobile/hero/Hero-img-mobile@x2.jpg);
-  }
+.hero-txt-container {
+  padding: 118px 60px;
 }
 .hero__txt {
   @include font(26px, 900, 42px);
-  max-width: 696px;
   text-align: center;
-
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 
   color: var(--hero-txt-color);
 }
@@ -47,7 +31,6 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-
   margin-left: auto;
   margin-right: auto;
   padding-left: 32px;
@@ -55,40 +38,17 @@
   min-height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
-
   background-color: var(--main-accent-color);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
   color: var(--hero-txt-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     background-color: var(--button-hover-color);
-  }
-}
-
-// TABLET
-
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-    min-height: 400px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(/images/images-adaptive/tablet/hero/Hero-img-tablet.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    padding: 118px 204px;
   }
 }
 @media (min-device-pixel-ratio: 2),
@@ -99,25 +59,53 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/images-adaptive/tablet/hero/Hero-img-tablet@x2.jpg);
+      url(/images/mobile/hero/Hero-img-mobile@x2.jpg);
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/tablet/hero/Hero-img-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .hero-txt-container {
+    padding: 118px 204px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/tablet/hero/Hero-img-tablet@x2.jpg);
+    }
   }
 }
 
 // DECKTOP
 @media screen and (min-width: 1200px) {
   .hero {
-    display: flex;
-    background-color: var(--hero-bg-color);
-    width: 1600px;
+    width: 100%;
     min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 200px 452px 280px 452px;
+
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/images-adaptive/desktop/hero/hero-img-desktop.jpg);
+      url(/images/desktop/hero/hero-img-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -130,8 +118,12 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/images-adaptive/desktop/hero/hero-img-desktop@x2.jpg);
+        url(/images/desktop/hero/hero-img-desktop@x2.jpg);
     }
+  }
+  .hero-txt-container {
+    padding: 200px 0 200px 0;
+    // margin: 0 auto;
   }
   .hero__txt {
     @include font(44px, 900, 60px);
