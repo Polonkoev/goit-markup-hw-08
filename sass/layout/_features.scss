@@ -19,6 +19,9 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 }
 .features__head {
   text-align: center;

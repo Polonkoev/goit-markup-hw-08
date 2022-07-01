@@ -62,6 +62,11 @@
       url(/images/mobile/hero/Hero-img-mobile@x2.jpg);
   }
 }
+@media screen and (max-width: 479px) {
+  .hero {
+    width: 100%;
+  }
+}
 
 // TABLET
 
