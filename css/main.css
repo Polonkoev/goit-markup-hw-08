@@ -754,6 +754,11 @@ body {
 .container-footer {
   display: block;
 }
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+  }
+}
 
 .logo-footer-link {
   display: flex;
@@ -786,7 +791,6 @@ body {
   display: block;
   list-style: none;
 }
-
 .adress {
   display: flex;
   justify-content: center;
@@ -802,6 +806,11 @@ body {
   justify-content: center;
   text-decoration: none;
   color: var(--footer-accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact-decor {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -875,14 +884,13 @@ body {
 @media screen and (min-width: 1200px) {
   .form-subscribe {
     display: inline-block;
-    width: 212px;
+    margin-left: 93px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .email-input {
-    display: inline-block;
-    margin-left: 93px;
+    display: flex;
   }
 }
 
@@ -895,6 +903,11 @@ body {
   margin-bottom: 20px;
   color: #ffffff;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-head {
+    display: inline-block;
+  }
 }
 
 .subscribe-email-input {
@@ -916,8 +929,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscribe-email-input {
-    display: inline-block;
     width: 358px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-email-input {
+    margin-right: 12px;
   }
 }
 
@@ -940,6 +957,16 @@ body {
   letter-spacing: 0.06em;
   padding-left: 30px;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-button {
+    display: inline-flex;
+    margin: 0;
+  }
+}
+
+.icon-send {
+  margin-left: 10px;
 }
 
 .backdrop {
@@ -1123,9 +1150,16 @@ body {
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: start;
+  flex-wrap: wrap;
   list-style: none;
+  padding-top: 60px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
 }
 
 .filter-item-btn {
@@ -1146,22 +1180,17 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter-item {
+  margin-bottom: 15px;
+}
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   list-style: none;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.card-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: -18.8888888889%;
+  width: 450px;
 }
 
 .card-list-head {

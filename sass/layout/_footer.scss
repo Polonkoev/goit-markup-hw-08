@@ -5,6 +5,9 @@
 }
 .container-footer {
   display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .logo-footer-link {
   display: flex;
@@ -33,6 +36,8 @@
 .footer-address-list {
   display: block;
   list-style: none;
+  @media screen and (min-width: 1200px) {
+  }
 }
 .adress {
   display: flex;
@@ -47,6 +52,9 @@
   text-decoration: none;
 
   color: var(--footer-accent-color);
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
 }
 .footer-addres-wraper {
   @media screen and (min-width: 768px) {
