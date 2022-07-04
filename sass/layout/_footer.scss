@@ -21,6 +21,8 @@
 
   text-decoration: none;
   color: var(--footer-txt-color);
+  @media screen and (min-width: 768px) {
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 0;
     justify-content: start;
@@ -44,6 +46,9 @@
   justify-content: center;
   list-style: none;
   padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
 }
 .footer-contact-decor {
   @include font(14px, 400, 24px);

@@ -1,19 +1,68 @@
 .card-list {
   display: block;
   list-style: none;
-  width: 450px;
+
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    // margin-left: -30px;
+    // margin-top: -30px;
+  }
   // display: flex;
   // flex-wrap: wrap;
   // list-style: none;
   // margin-left: -30px;
   // margin-top: -30px;
 }
+.portfolio_img {
+  width: 450px;
+  height: 294px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
 
 .card-list-item {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+    // margin-left: 30px;
+    // margin-top: 30px;
+
+    // flex-basis: calc((100% - 180px) / 3);
+    // padding-bottom: 0;
+  }
   // margin-left: 30px;
   // margin-top: 30px;
 
   // flex-basis: calc((100% - 270%) / 9);
+}
+// .list-item-wrap {
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//     height: 440px;
+//   }
+// }
+.tecnocryak {
+  @media screen and (min-width: 768px) {
+    height: 146px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 110px;
+  }
 }
 
 .card-list-head {
@@ -63,6 +112,12 @@
   width: 370px;
   height: 294px;
   overflow: hidden;
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 }
 
 .card-hovered-desc {
@@ -90,5 +145,19 @@
   .card-list-link:hover &,
   .card-list-link:focus & {
     transform: translate(0px, -294px) rotate(0deg);
+  }
+
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }

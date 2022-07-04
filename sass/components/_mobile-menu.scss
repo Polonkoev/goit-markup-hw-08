@@ -37,6 +37,7 @@
 }
 .mobile-menu-container {
   position: relative;
+  height: 100%;
 }
 .menu-close-btn {
   position: absolute;
@@ -64,6 +65,9 @@
   padding-left: 40px;
   padding-bottom: 302px;
   padding-top: 48px;
+  // @media screen and (max-width: 768px) {
+  //   margin-bottom: 320px;
+  // }
 }
 .mobile-menu-decor {
   display: inline-block;
