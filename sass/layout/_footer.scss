@@ -52,6 +52,7 @@
 }
 .footer-contact-decor {
   @include font(14px, 400, 24px);
+  font-style: normal;
   display: flex;
   justify-content: center;
   text-decoration: none;
