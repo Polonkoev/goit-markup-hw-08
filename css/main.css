@@ -81,7 +81,6 @@ body {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid green;
 }
 
 @media screen and (min-width: 480px) {
@@ -99,6 +98,11 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .container-header {
@@ -365,7 +369,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 600px;
     padding-bottom: 94px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/hero/hero-img-desktop.jpg);
@@ -759,6 +763,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
+    padding-bottom: 0;
   }
 }
 
@@ -786,6 +791,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7142857143;
+  font-style: normal;
   color: var(--footer-txt-color);
 }
 
@@ -793,6 +799,7 @@ body {
   display: block;
   list-style: none;
 }
+
 .adress {
   display: flex;
   justify-content: center;
@@ -843,6 +850,7 @@ body {
 @media screen and (min-width: 1200px) {
   .follow {
     margin-left: 70px;
+    margin-top: 72px;
   }
 }
 
