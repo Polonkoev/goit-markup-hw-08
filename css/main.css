@@ -98,10 +98,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-  }
-
-  .section {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -283,6 +279,10 @@ body {
     height: 4px;
     background-color: var(--main-accent-color);
     border-radius: 2px;
+  }
+
+  .container-header {
+    padding-bottom: 0;
   }
 }
 .hero {
@@ -513,7 +513,8 @@ body {
     display: flex;
     gap: 30px;
     list-style: none;
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 0;
   }
 
   .features__list-item {
@@ -527,6 +528,7 @@ body {
 
   .features__item-description {
     width: 270px;
+    padding-bottom: 0;
   }
 }
 .about-work {
@@ -537,7 +539,6 @@ body {
   .about-work {
     display: block;
     padding-top: 0;
-    padding-bottom: 94px;
   }
 
   .about-work-head {
@@ -608,6 +609,7 @@ body {
 @media screen and (min-width: 1200px) {
   .our-team-list {
     flex-wrap: nowrap;
+    padding-bottom: 0;
   }
 }
 
@@ -626,6 +628,7 @@ body {
 @media screen and (min-width: 1200px) {
   .our-team-item {
     width: 270px;
+    margin-bottom: 0;
   }
 }
 
@@ -702,6 +705,11 @@ body {
   margin-left: -30px;
   padding-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    padding-bottom: 0;
+  }
+}
 
 .clients-head {
   text-align: center;
@@ -756,6 +764,11 @@ body {
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
 
 .container-footer {
   display: block;
@@ -763,6 +776,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
+    align-items: baseline;
     padding-bottom: 0;
   }
 }
@@ -781,6 +795,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo-footer-link {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1923076923;
     margin-left: 0;
     justify-content: start;
   }
@@ -838,6 +855,8 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-addres-wraper {
     margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
@@ -850,7 +869,7 @@ body {
 @media screen and (min-width: 1200px) {
   .follow {
     margin-left: 70px;
-    margin-top: 72px;
+    margin-top: 0;
   }
 }
 
@@ -1265,13 +1284,8 @@ body {
   }
 }
 .portfolio_img {
-  width: 450px;
-  height: 294px;
-}
-@media screen and (min-width: 768px) {
-  .portfolio_img {
-    width: 354px;
-  }
+  width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 1200px) {
   .portfolio_img {
@@ -1291,17 +1305,6 @@ body {
 @media screen and (min-width: 1200px) {
   .card-list-item {
     flex-basis: calc((100% - 60px) / 3);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .tecnocryak {
-    height: 146px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .tecnocryak {
-    height: 110px;
   }
 }
 
@@ -1330,12 +1333,23 @@ body {
 .card-list-link:hover, .card-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) {
+  .card-list-link {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .card-description {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .card-description {
+    flex-grow: 1;
+  }
 }
 
 .card-desc-hover {
@@ -1346,7 +1360,7 @@ body {
   height: 294px;
   overflow: hidden;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479px) {
   .card-desc-hover {
     width: 100%;
   }
@@ -1366,6 +1380,13 @@ body {
   height: 168px;
   color: var(--footer-txt-color);
 }
+@media screen and (max-width: 479px) {
+  .card-hovered-desc {
+    font-size: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 
 .card-hovered {
   position: absolute;
@@ -1378,7 +1399,7 @@ body {
 .card-list-link:hover .card-hovered, .card-list-link:focus .card-hovered {
   transform: translate(0px, -294px) rotate(0deg);
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479px) {
   .card-hovered {
     width: 100%;
     height: 100%;

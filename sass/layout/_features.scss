@@ -80,7 +80,8 @@
     display: flex;
     gap: 30px;
     list-style: none;
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 0;
   }
   .features__list-item {
     width: 270px;
@@ -91,6 +92,7 @@
   }
   .features__item-description {
     width: 270px;
+    padding-bottom: 0;
   }
 }
 // .features {
