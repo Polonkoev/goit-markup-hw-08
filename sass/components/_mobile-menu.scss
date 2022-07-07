@@ -99,6 +99,8 @@
   list-style: none;
   padding-left: 40px;
   @media screen and (max-width: 479px) {
+    position: absolute;
+    bottom: 134px;
     padding-left: 0;
   }
 }
@@ -139,6 +141,8 @@
   list-style: none;
   color: var(--main-accent-color);
   @media screen and (max-width: 479px) {
+    position: absolute;
+    bottom: 64px;
     padding-left: 0;
   }
 }
