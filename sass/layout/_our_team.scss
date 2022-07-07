@@ -46,7 +46,7 @@
 }
 .our-team-desc {
   @include font(16px, 400, 19px);
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   text-align: center;
   color: var(--sec-accent-color);
 }
@@ -64,6 +64,7 @@
   justify-content: center;
   list-style: none;
   gap: 10px;
+  padding-bottom: 24px;
 }
 
 .team-social-icon {
@@ -82,7 +83,9 @@
   height: 44px;
 }
 .team-description {
-  margin-bottom: 16px;
+  @media screen and (max-width: 769px) {
+    margin-bottom: 30px;
+  }
 }
 
 .social-link {

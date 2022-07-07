@@ -63,11 +63,15 @@
 .mobile-menu-link {
   list-style: none;
   padding-left: 40px;
-  // padding-bottom: 302px;
+
   padding-top: 48px;
-  // @media screen and (max-width: 768px) {
-  //   margin-bottom: 320px;
-  // }
+  @media screen and (max-width: 479px) {
+    padding-left: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 320px;
+  }
 }
 .mobile-menu-decor {
   display: inline-block;
@@ -82,11 +86,21 @@
 
   text-decoration: none;
   color: var(--main-txt-color);
+  &:hover,
+  &:focus {
+    color: var(--main-accent-color);
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 30px;
+  }
 }
 
 .mobile-menu-contacts {
   list-style: none;
   padding-left: 40px;
+  @media screen and (max-width: 479px) {
+    padding-left: 0;
+  }
 }
 .mobile-menu-tel {
   display: block;
@@ -100,6 +114,9 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-accent-color);
+  @media screen and (max-width: 479px) {
+    font-size: 28px;
+  }
 }
 .mobile-menu-mail {
   display: block;
@@ -115,11 +132,15 @@
 }
 .mobile-menu-social {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding-left: 40px;
   padding-bottom: 48px;
   list-style: none;
   color: var(--main-accent-color);
+  @media screen and (max-width: 479px) {
+    padding-left: 0;
+  }
 }
 .mobile-menu-social-links {
   font-family: "Roboto";
